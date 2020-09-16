@@ -1,4 +1,4 @@
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastDummies_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastDummies/fastDummies_{{ version }}.tar.gz
-  sha256: 27131adf025fb7d2b63cca7d99b1ac9ab2ee51e26ffeefd8dd4b71a872fe17ef
+  sha256: b15e665af9854ec1c659657332e92292132b73543b8674297655168a053612f6
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -27,12 +27,12 @@ requirements:
     - r-base
     - r-data.table
     - r-tibble
-    - r-stringi
+    - r-stringr
   run:
     - r-base
     - r-data.table
     - r-tibble
-    - r-stringi
+    - r-stringr
 
 test:
   commands:
@@ -42,8 +42,7 @@ test:
 about:
   home: https://github.com/jacobkap/fastDummies
   license: MIT
-  summary: Creates dummy columns from columns that have categorical variables (character or factor types). You can also specify which columns to make dummies out
-    of, or which columns to ignore. Also creates dummy rows from character, factor, and Date columns. This package provides a significant speed increase from creating
+  summary: Creates dummy columns from columns that have categorical variables (character or factor types). You can also specify which columns to make dummies out of, or which columns to ignore. Also creates dummy rows from character, factor, and Date columns. This package provides a significant speed increase from creating
     dummy variables through model.matrix().
   license_family: MIT
   license_file:
