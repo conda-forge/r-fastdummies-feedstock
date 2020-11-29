@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastDummies_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastDummies/fastDummies_{{ version }}.tar.gz
-  sha256: b15e665af9854ec1c659657332e92292132b73543b8674297655168a053612f6
+  sha256: bd3934fe19d7dff2723438bbb7b89334118143f8ce151d98477ae964ee5d81df
 
 build:
   merge_build_host: true  # [win]

@@ -5,11 +5,9 @@ Home: https://github.com/jacobkap/fastDummies
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fastdummies-feedstock/blob/master/LICENSE.txt)
 
 Summary: Creates dummy columns from columns that have categorical variables (character or factor types). You can also specify which columns to make dummies out of, or which columns to ignore. Also creates dummy rows from character, factor, and Date columns. This package provides a significant speed increase from creating dummy variables through model.matrix().
-
-
 
 Current build status
 ====================
