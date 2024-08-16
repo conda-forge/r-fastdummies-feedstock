@@ -1,4 +1,4 @@
-{% set version = "1.7.3" %}
+{% set version = "1.7.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fastDummies_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fastDummies/fastDummies_{{ version }}.tar.gz
-  sha256: cf6a182f778711b69460b00575babfa573f1578166d83ae2ed932db5fa15a06a
+  sha256: 95904d4b67efc3faafa47cae9473c9d75653bc3fb6ad0083869ebf9f7960dd08
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
